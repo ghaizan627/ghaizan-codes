@@ -20,7 +20,7 @@ body {
   color: var(--text-main);
   font-family: "Yellowtail";
   flex: 1;
-  margin-left: 30px;
+  margin-left: 10px;
 }
 .logo-brand h1 {
   font-size: x-large;
@@ -31,7 +31,7 @@ nav {
   align-items: center;
   gap: 1rem;
   justify-content: end;
-  margin-right: 30px;
+  margin-right: 10px;
 }
 nav a {
   color: var(--text-main);
