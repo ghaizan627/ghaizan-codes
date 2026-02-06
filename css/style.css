@@ -81,7 +81,6 @@ nav a {
     justify-content: center;
     max-height: 300px;
     overflow: hidden;
-    /* opacity: 1; */
     transition:
       max-height 0.4s ease-in-out,
       opacity 0.3s ease-in-out;
