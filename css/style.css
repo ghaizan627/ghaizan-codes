@@ -45,7 +45,7 @@ nav a {
 nav a:hover {
   color: var(--accent-color);
 }
-.navbar nav a:nth-child(4) {
+.navbar nav .link:nth-child(4) {
   background-color: var(--card-color);
   padding: 10px;
 }
@@ -79,14 +79,22 @@ nav a:hover {
     margin-right: 10px;
     width: max-content;
   }
+  .navbar nav .link {
+    border-bottom: var(--text-muted) 1px solid;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+  .navbar nav .link:nth-child(4) {
+    background-color: transparent;
+    padding: 0;
+  }
   .navbar nav {
     grid-area: link;
     display: flex;
     flex-direction: column;
     margin-right: 0;
-    align-items: center;
     width: 100%;
-    justify-content: center;
     max-height: 300px;
     overflow: hidden;
     transition:
