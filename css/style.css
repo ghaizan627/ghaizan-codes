@@ -6,24 +6,23 @@
   --text-muted: #94a3b8;
 }
 body {
-  background-color: var(--bg-color);
   margin: 0;
   padding: 0;
 }
 .navbar {
   display: flex;
   align-items: center;
-  background-color: var(--card-color);
+  background-color: rgba(15, 23, 42, 0.8);
   padding: 10px;
 }
 .logo-brand {
-  color: var(--text-main);
   font-family: "Yellowtail";
   flex: 1;
   margin-left: 10px;
 }
 .logo-brand h1 {
-  font-size: x-large;
+  font-size: 1.5rem;
+  color: var(--text-main);
 }
 nav {
   flex: 2;
@@ -34,13 +33,21 @@ nav {
   margin-right: 10px;
 }
 nav a {
-  color: var(--text-main);
+  color: var(--text-muted);
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.65rem;
   font-weight: bold;
   text-transform: uppercase;
   padding: 5px;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: var(--accent-color);
+}
+.navbar nav a:nth-child(4) {
+  background-color: var(--card-color);
+  padding: 10px;
 }
 .toggle-menu {
   display: none;
@@ -48,6 +55,7 @@ nav a {
 .toggle-menu i {
   color: var(--text-main);
   font-size: xx-large;
+  color: var(--text-main);
 }
 
 @media screen and (max-width: 480px) {
