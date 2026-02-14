@@ -136,7 +136,6 @@ nav a {
   .navbar .toggle-menu {
     grid-area: toggle;
     display: flex;
-    color: red;
     align-items: center;
     justify-content: end;
     margin-right: 10px;
