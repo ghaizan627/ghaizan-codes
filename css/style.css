@@ -61,7 +61,8 @@ nav a:hover {
 
 /* Section hero */
 .hero {
-  background-color: var(--bg-color);
+  /* background-color: var(--bg-color); */
+  background-color: #818cf8;
   height: 100vh;
   display: flex;
   align-items: center;
