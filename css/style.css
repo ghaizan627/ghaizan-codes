@@ -144,14 +144,12 @@ nav a {
   width: max-content;
   overflow: hidden;
   animation: scrollleft 50s linear infinite;
-  cursor: pointer;
 }
 .marquee-row-right {
   display: flex;
   width: max-content;
   overflow: hidden;
   animation: scrollright 50s linear infinite;
-  cursor: pointer;
 }
 .marquee-row-right:hover {
   animation-play-state: paused;
