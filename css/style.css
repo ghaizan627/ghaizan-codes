@@ -59,7 +59,6 @@ nav a {
 
 /* Section hero */
 .hero {
-  /* background-color: var(--bg-color); */
   background-color: #818cf8;
   height: 100vh;
   display: flex;
@@ -119,6 +118,81 @@ nav a {
 }
 .hero .hero-button a:hover {
   opacity: 0.8;
+}
+/* section wrapper skills */
+.marquee-wrapper {
+  overflow: hidden;
+  position: relative;
+  background-color: var(--dark-grey);
+}
+.marquee-row-left {
+  display: flex;
+  width: max-content;
+  overflow: hidden;
+  animation: scrollleft 50s linear infinite;
+  cursor: pointer;
+}
+.marquee-row-right {
+  display: flex;
+  width: max-content;
+  overflow: hidden;
+  animation: scrollright 50s linear infinite;
+  cursor: pointer;
+}
+.marquee-row-right:hover {
+  animation-play-state: paused;
+}
+.marquee-row-left:hover {
+  animation-play-state: paused;
+}
+.marquee-row-right .skill-item i {
+  color: var(--teal);
+  font-size: 90px;
+  opacity: 0.7;
+}
+.skill-item {
+  margin: 0 30px;
+  /* border: solid 2px var(--teal); */
+  padding: 30px;
+}
+.marquee-row-left .skill-item i {
+  color: var(--teal);
+  opacity: 0.7;
+  font-size: 90px;
+}
+@keyframes scrollleft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes scrollright {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.marquee-wrapper::before,
+.marquee-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 140px;
+  z-index: 2;
+  pointer-events: none;
+}
+.marquee-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, var(--dark-grey), transparent);
+}
+.marquee-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, var(--dark-grey), transparent);
 }
 @media screen and (max-width: 736px) {
   /* navigasi bar */
