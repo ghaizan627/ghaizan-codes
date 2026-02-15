@@ -8,6 +8,10 @@ body {
   margin: 0;
   padding: 0;
 }
+section {
+  margin: 0;
+  padding: 0;
+}
 /* Navigasi bar */
 .navbar {
   display: flex;
@@ -60,11 +64,11 @@ nav a {
 /* Section hero */
 .hero {
   background-color: #818cf8;
-  height: 100vh;
   display: flex;
   align-items: center;
   background-color: var(--dark-grey);
   color: var(--light-grey);
+  height: 100vh;
 }
 .hero .hero-image {
   flex: 1;
@@ -152,7 +156,6 @@ nav a {
 }
 .skill-item {
   margin: 0 30px;
-  /* border: solid 2px var(--teal); */
   padding: 30px;
 }
 .marquee-row-left .skill-item i {
