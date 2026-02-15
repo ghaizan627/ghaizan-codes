@@ -17,7 +17,7 @@ section {
   display: flex;
   align-items: center;
   padding: 10px;
-  background-color: #222831e6;
+  background-color: var(--teal);
   color: var(--light-grey);
 }
 .logo-brand {
@@ -45,12 +45,13 @@ nav a {
   text-transform: uppercase;
   padding: 5px;
 }
-.navbar nav .link:nth-child(4) {
+.navbar nav .link:nth-child(4) a {
   padding: 10px;
-  background-color: var(--teal);
+  background-color: var(--light-grey);
+  color: var(--teal);
   transition: 0.3s;
 }
-.navbar nav .link:nth-child(4):hover {
+.navbar nav .link:nth-child(4) a:hover {
   opacity: 0.8;
 }
 .toggle-menu {
