@@ -128,7 +128,7 @@ nav a {
 .marquee-wrapper {
   overflow: hidden;
   position: relative;
-  background-color: var(--dark-grey);
+  background-color: var(--charcoal);
 }
 .marquee-wrapper h1 {
   text-align: center;
@@ -199,11 +199,11 @@ nav a {
 }
 .marquee-wrapper::before {
   left: 0;
-  background: linear-gradient(to right, var(--dark-grey), transparent);
+  background: linear-gradient(to right, var(--charcoal), transparent);
 }
 .marquee-wrapper::after {
   right: 0;
-  background: linear-gradient(to left, var(--dark-grey), transparent);
+  background: linear-gradient(to left, var(--charcoal), transparent);
 }
 @media screen and (max-width: 736px) {
   /* navigasi bar */
